@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivial Pursuit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Trivial Pursuit COmbustibles</h1>
+        <p>Seleziona un tipo di energia</p>
+        
+        <div class="button-container">
+            <button class="btn carbone" onclick="showQuestion(1)">Carbone</button>
+            <button class="btn petrolio" onclick="showQuestion(2)">Petrolio</button>
+            <button class="btn gas" onclick="showQuestion(3)">Gas</button>
+            <button class="btn nucleare" onclick="showQuestion(4)">Nucleare</button>
+        </div>
+
+        <div id="content" class="hidden">
+            <h3>Domanda:</h3>
+            <p id="question-text"></p>
+            <h3>Risposta:</h3>
+            <p id="answer-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
