@@ -55,11 +55,27 @@ const domande = {
         ],
         
     3: [
-        { domanda: "Quale canzone ti rappresenta di più?",  risposta: "esempio" },
-        { domanda: "Se fossi un personaggio di un videogioco, chi saresti?", risposta: "esempio" },
-        { domanda: "Preferisci vivere in città o in campagna?",  risposta: "esempio" },
-        { domanda: "Qual è stato il viaggio più bello che hai fatto?", risposta: "esempio" },
-        { domanda: "Se potessi cambiare una cosa nel mondo, quale sarebbe?", risposta: "esempio" }
+        { domanda: "Quale è l altro nome che viene usato per indicare il gas naturale?", risposta: "Il metano" },
+        { domanda: "Il gas naturale è il più sporco o il più pulito tra i combustibili fossili?", risposta: "Il più pulito" },
+        { domanda: "Come si forma?", risposta: "Per lenta decomposizione di sostanze organiche durante milioni di anni" },
+        { domanda: "Dove si può trovare il metano in maggior quantità?", risposta: "Nelle regioni petrolifere" },
+        { domanda: "Il gas naturale si può trovare anche in zone povere o prive di petrolio?", risposta: "Si" },
+        { domanda: "Perchè il gas naturale si può trovare anche in zone prive/povere di petrolio?", risposta: "Perchè i gas tendono a spostarsi nel sottosuolo con maggiore facilità dei liquidi." },
+        { domanda: "Con cosa viene trasportato il metano?", risposta: "Con i gasdotti o metanodotti" },
+        { domanda: "Per cosa viene utilizzato il metano?", risposta: "Per produrre energia elettrica" },
+        { domanda: "Al posto di che cosa viene utilizzato il metano nelle centrali elettriche?", risposta: "Al posto del carbone" },
+        { domanda: "Il metano è utilizzato per produrre energia termica?", risposta: "Si" },
+        { domanda: "Il metano è utilizzato anche negli usi domestici e civili?", risposta: "Si" },
+        { domanda: "Fai un esempio dove il metano viene utilizzato per usi domestici", risposta: "Cucine a gas, riscaldamento" },
+        { domanda: "Il metano è utilizzato nella industria chimica?", risposta: "Si" },
+        { domanda: "Il gas naturale è più economico rispetto al carbone o al petrolio per la produzione di energia?", risposta: "Sì, poiché ha un potere calorifico maggiore e una minore necessità di costosi impianti di trattamento." },
+        { domanda: "Quali sono i principali paesi produttori di gas naturale?", risposta: "I principali paesi produttori di gas naturale sono Stati Uniti, Russia, Qatar, Iran e Canada." },
+        { domanda: "Come viene estratto il gas naturale dal sottosuolo?", risposta: "Il gas naturale viene estratto tramite perforazioni nel terreno o nel mare, utilizzando tecniche come la trivellazione diretta o il fracking (fratturazione idraulica) in caso di riserve non convenzionali." },
+        { domanda: "Qual è la principale fonte di inquinamento legata all estrazione di gas naturale?", risposta: "La principale fonte di inquinamento è il rilascio di metano, un gas serra potente, durante la estrazione e il trasporto. Inoltre, il fracking può causare contaminazione delle acque sotterranee." },
+        { domanda: "Il gas naturale può essere utilizzato come carburante per veicoli?", risposta: "Sì, il gas naturale può essere utilizzato come carburante per veicoli, sotto forma di metano compresso (CNG) o metano liquefatto (LNG)." },
+        { domanda: "Quali sono i principali vantaggi nellutilizzo del gas naturale rispetto ad altri combustibili fossili?", risposta: "Il gas naturale emette meno CO₂ e inquinanti rispetto al carbone e al petrolio, ed è più efficiente nella produzione di energia elettrica e termica." },
+        { domanda: "In che modo l uso del gas naturale influisce sulle emissioni di gas serra?", risposta: "L uso del gas naturale riduce le emissioni di CO₂ rispetto ad altri combustibili fossili, ma il metano, se rilasciato in modo incontrollato, è un gas serra molto più potente del CO₂." }
+        
     ],
     4: [
         { domanda: "Che cosa è l'energia nucleare?", risposta: "È una forma di energia che deriva da profonde modificazioni della struttura della materia." },
@@ -90,29 +106,25 @@ const domande = {
 };
 
 function showQuestion(buttonNumber) {
-    let selectedArray = domande[buttonNumber]; // Usa "domande" invece di "domandeRisposte"
+    let selectedArray = domande[buttonNumber];
 
     if (!selectedArray) return;
 
     let randomIndex = Math.floor(Math.random() * selectedArray.length);
-    let selectedQA = selectedArray[randomIndex]; // Seleziona DOMANDA e RISPOSTA
+    let selectedQA = selectedArray[randomIndex];
 
     let questionText = document.getElementById("question-text");
     let answerText = document.getElementById("answer-text");
     let content = document.getElementById("content");
 
-    // Assegna i valori corretti
     questionText.innerText = `❓ ${selectedQA.domanda}`;
     answerText.innerText = `💡 ${selectedQA.risposta}`;
 
-    // Mostra il contenitore con animazione
     content.classList.remove("hidden");
 
-    // Nascondi la risposta inizialmente
     answerText.style.display = 'none';
 
-    // Aggiungi un evento per mostrare la risposta quando la domanda viene cliccata
     questionText.addEventListener("click", function() {
-        answerText.style.display = 'block'; // Mostra la risposta
+        answerText.style.display = 'block';
     });
 }
