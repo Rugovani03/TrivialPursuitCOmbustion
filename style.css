@@ -1,4 +1,3 @@
-/* Stile generale */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -63,7 +62,6 @@ p {
     opacity: 0.8;
 }
 
-/* Contenitore domanda */
 #content {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
@@ -75,18 +73,16 @@ p {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Risposta inizialmente nascosta */
 #answer-text {
     font-size: 18px;
     font-weight: bold;
     margin-top: 10px;
     color: #ffd700;
-    display: none; /* Nascondi la risposta inizialmente */
+    display: none; 
 }
 
-/* Stile per la domanda */
 #question-text {
-    cursor: pointer; /* Cambia il cursore per mostrare che è cliccabile */
+    cursor: pointer;
     color: #ffcc00;
 }
 
@@ -99,5 +95,77 @@ p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #content {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #question-text {
+        font-size: 16px;
+    }
+
+    #answer-text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    #content {
+        padding: 12px;
+    }
+
+    #question-text {
+        font-size: 14px;
+    }
+
+    #answer-text {
+        font-size: 14px;
     }
 }
