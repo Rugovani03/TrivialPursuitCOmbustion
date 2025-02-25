@@ -69,12 +69,12 @@ const domande = {
         { domanda: "Fai un esempio dove il metano viene utilizzato per usi domestici", risposta: "Cucine a gas, riscaldamento" },
         { domanda: "Il metano è utilizzato nella industria chimica?", risposta: "Si" },
         { domanda: "Il gas naturale è più economico rispetto al carbone o al petrolio per la produzione di energia?", risposta: "Sì, poiché ha un potere calorifico maggiore e una minore necessità di costosi impianti di trattamento." },
-        { domanda: "Quali sono i principali paesi produttori di gas naturale?", risposta: "I principali paesi produttori di gas naturale sono Stati Uniti, Russia, Qatar, Iran e Canada." },
-        { domanda: "Come viene estratto il gas naturale dal sottosuolo?", risposta: "Il gas naturale viene estratto tramite perforazioni nel terreno o nel mare, utilizzando tecniche come la trivellazione diretta o il fracking (fratturazione idraulica) in caso di riserve non convenzionali." },
-        { domanda: "Qual è la principale fonte di inquinamento legata all estrazione di gas naturale?", risposta: "La principale fonte di inquinamento è il rilascio di metano, un gas serra potente, durante la estrazione e il trasporto. Inoltre, il fracking può causare contaminazione delle acque sotterranee." },
-        { domanda: "Il gas naturale può essere utilizzato come carburante per veicoli?", risposta: "Sì, il gas naturale può essere utilizzato come carburante per veicoli, sotto forma di metano compresso (CNG) o metano liquefatto (LNG)." },
-        { domanda: "Quali sono i principali vantaggi nellutilizzo del gas naturale rispetto ad altri combustibili fossili?", risposta: "Il gas naturale emette meno CO₂ e inquinanti rispetto al carbone e al petrolio, ed è più efficiente nella produzione di energia elettrica e termica." },
-        { domanda: "In che modo l uso del gas naturale influisce sulle emissioni di gas serra?", risposta: "L uso del gas naturale riduce le emissioni di CO₂ rispetto ad altri combustibili fossili, ma il metano, se rilasciato in modo incontrollato, è un gas serra molto più potente del CO₂." }
+        { domanda: "Quali sono i principali paesi produttori di gas naturale?", risposta: "Stati Uniti, Russia, Canada e diversi paesi Arabi." },
+        { domanda: "Come viene estratto il gas naturale dal sottosuolo?", risposta: "Il gas naturale viene estratto tramite perforazioni nel terreno o nel mare, utilizzando tecniche come la trivellazione diretta in caso di riserve non convenzionali." },
+        { domanda: "Qual è la principale fonte di inquinamento legata all estrazione di gas naturale?", risposta: "La principale fonte di inquinamento è il rilascio di metano, durante la estrazione e il trasporto." },
+        { domanda: "Il gas naturale può essere utilizzato come carburante per veicoli?", risposta: "Sì, il gas naturale può essere utilizzato come carburante per veicoli." },
+        { domanda: "Quali sono i principali vantaggi nell utilizzo del gas naturale rispetto ad altri combustibili fossili?", risposta: "Il gas naturale emette meno CO₂ e inquinanti rispetto al carbone e al petrolio, ed è più efficiente nella produzione di energia elettrica e termica." },
+        { domanda: "In che modo l uso del gas naturale influisce sulle emissioni di gas serra?", risposta: "L uso del gas naturale riduce le emissioni di CO₂ rispetto ad altri combustibili fossili, ma, se rilasciato in modo incontrollato, è un gas serra molto più potente del CO₂." }
         
     ],
     4: [
